@@ -1,15 +1,16 @@
-import React from 'react'
+ import React from 'react'
+ import './StudentCard.css';
+ 
+ function StudentCard(props) {
+   return (
+         <div className="student-card">
+      <h2>Student Details</h2>
+      <p><strong>Name:</strong> {props.name}</p>
+      <p><strong>Course:</strong> {props.course}</p>
+      <p><strong>Marks:</strong> {props.marks}</p>
+    </div>
 
-function Exp7() {
-  return (
-   <>
-   <h1>Experiment 7</h1>
-   <div style={{backgroundColor : 'white', display : 'flex', gap: '10px'}}></div>
-    <h2>{name}</h2>
-    <h2>{rollno}</h2>
-    <h2>{course}</h2>
-   </>
-  );
-}
-
-export default Exp7
+   )
+ }
+ 
+ export default StudentCard
